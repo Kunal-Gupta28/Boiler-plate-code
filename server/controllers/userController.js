@@ -1,6 +1,6 @@
 const { StatusCodes } = require("http-status-codes");
 const { validationResult } = require("express-validator");
-const userModel = require("../models/user.model");
+const userModel = require("../models/userModel");
 const { hash, compare } = require("bcrypt");
 
 module.exports.register = async (req, res) => {
